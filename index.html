@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRODS 1</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="Utf-8">
+    </head>
+    <body>
+        <!-- messages -->
+        <div class="messages" id="messages">
+            
+        </div>
+        <div class="crud">
+            <div class="head">
+                <h2>crud</h2>
+                <p>PRODCT MANAGEMENT SYSTEM</p>
+            </div>
+
+            <div class="inputs">
+                <input placeholder="title" type="text" id="title">
+                <div class="price">
+                    <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                    <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                    <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                    <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                    <span id="total"></span>
+                </div>
+                <input placeholder="count" type="number" id="count">
+                <input type="text" placeholder="category" id="category">
+                <div class="button-grop">
+                    <button id="submit">Create</button>
+                    <button id="updata">Updata</button>
+                </div>
+            </div>
+
+            <div class="outputs">
+                <div class="search-block">
+                    <input type="text" id="search" placeholder="search">
+                    <div class="btnsearch">
+                        <button id="search-title">Search By Title</button>
+                        <button id="search-Category">Search By Category</button>
+                    </div>
+                </div>
+                
+                <div id="deleteAll">
+
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discount</th>
+                            <th>totale</th>
+                            <th>category</th>
+                            <th>Date</th>
+                            <th>updata</th>
+                            <th>delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+             
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

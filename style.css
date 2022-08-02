@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
+}
+
+#messages {
+    position: fixed;
+    top: 70px;
+    right: -10px;
+    width: 220px;
+}
+
+#messages span {
+    /* position: relative;
+    right: -265px; */
+    transform: translateX(250px);
+    display: none;
+    background: #68c740;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000b8;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+
+
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #550463;
+    color: #fff;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.crud {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 0;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    transition: .3s;
+    color: #fff;
+}
+
+input:focus {
+    background-color: rgb(7, 7, 7);
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.486);
+}
+
+.price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.price input {
+    max-width: 170px;
+    margin-left: 15px;
+}
+
+@media (max-width: 600px) {
+    .price input {
+        max-width: 100%;
+    }
+} 
+
+#total {
+    display: inline-block;
+    background-color: #ee3b3b;
+    border-radius: 4px;
+    margin: 10px;
+    margin-left: 20px;
+    padding: 7px;
+    transition: .3s;
+}
+
+#total::before {
+    content: "Total: ";
+}
+
+.button-grop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-grop button {
+    margin: 10px !important;
+    transition: 1s;
+    width: 90%;
+}
+
+.button-grop button:first-child {
+    background-color: #d09e09;
+}
+
+.button-grop button:last-child {
+    background-color: #259a40;
+    display: none;
+    width: 0%;
+}
+
+.inputs button {
+    margin: 10px 0;
+}
+
+button:hover {
+    background: #6e037c;
+    transform: scaleY(1.1);
+}
+
+.outputs .btnsearch {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.outputs .btnsearch button {
+    margin: 5px;
+    width: 200px;
+    height: auto;
+    padding: 12px 20px;
+}
+
+#deleteAll {
+    margin: 20px;
+}
+
+#deleteAll button {
+    background-color: #ee2b2b;
+}
+
+.outputs table {
+    border-top: 4px solid #111;
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table #delete {
+    background-color: #d42626;
+}
+
+table #update {
+    background-color: #259a40
+}
+
+.outputs table tr th,
+.outputs table tr td,
+.outputs table tr {
+    border: 1px solid #4d4d4d;
+    padding: 5px;
+    text-align: center;
+}
