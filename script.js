@@ -127,7 +127,7 @@ function showDate() {
                 <td> ${item.total} </td>
                 <td> ${item.category} </td>
                 <td> ${Fulldate} </td>
-                <td> <button onclick="updataButton(${i})" id="update">Upate</button> </td>
+                <td> <button onclick="updataButton(${i})" id="update">Update</button> </td>
                 <td> <button onclick="deleteData(${i})" id="delete">Delete</button> </td>
             </tr>
         `; 
