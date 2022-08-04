@@ -106,7 +106,7 @@ fs.exists('data.json', function(exists) {
             if (err) {
                 console.log(err);
             } else {
-                obj = JSON.parse(dataPro  );
+                obj = JSON.parse(data  );
 
                 for (i = 0; i < 5; i++) {
                     obj.table.push({
