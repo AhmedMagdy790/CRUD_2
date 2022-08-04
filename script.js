@@ -43,6 +43,12 @@ if(localStorage.product != null){
 }
 
 submit.onclick = () => {
+    
+    let json = JSON.stringify("jdjdjjskwks");
+        fs.writeFile('data.json'," json");
+    
+    
+    
     let date = new Date().getTime();
     getTotal();
     let data = {
