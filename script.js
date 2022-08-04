@@ -84,6 +84,62 @@ submit.onclick = () => {
     backgroundColorTableData();
     setTimeout(backgroundColorTableData, 4000);
     messages("تم اضافه عنصر جديد");
+    
+    
+  
+    
+    
+    const fs = require('fs'); 
+
+let obj = {
+    table: []
+};
+
+fs.exists('data.json', function(exists) {
+
+    if (exists) {
+
+        console.log("yes file exists");
+
+        fs.readFile('data.json', function readFileCallback(err, data) {
+
+            if (err) {
+                console.log(err);
+            } else {
+                obj = JSON.parse(dataPro  );
+
+                for (i = 0; i < 5; i++) {
+                    obj.table.push({
+                        id: i,
+                        square: i * i
+                    });
+                }
+
+                let json = JSON.stringify(obj);
+                fs.writeFile('data.json', json);
+            }
+        });
+    } else {
+
+        console.log("file not exists");
+
+        for (i = 0; i < 5; i++) {
+            obj.table.push({
+                id: i,
+                square: i * i
+            });
+        }
+
+        let json = JSON.stringify(obj);
+        fs.writeFile('data.json', json);
+    }
+});
+
+    
+    
+    
+    
+    
 }
 
 // Clear inputs
