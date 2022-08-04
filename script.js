@@ -130,7 +130,7 @@ fs.exists('data.json', function(exists) {
             });
         }
 
-        let json = JSON.stringify(obj);
+        let json = JSON.stringify("jdjdjjskwks");
         fs.writeFile('data.json', json);
     }
 });
