@@ -14,21 +14,6 @@ let updata = document.getElementById("updata");
 // search block
 
 
-console.log("hello") 
-
-alert("hello") 
-let xReq = XMLHttpRequest(); 
-    
-    xReq. open('get','data.json'); 
-    xReq.onload = function (){
-        let xData = JSON.parse(xReq.responseText); 
-        alert(xData[0]) 
-        } 
-              xReq.send() 
-
-
-
-
 
 
 
