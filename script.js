@@ -23,7 +23,7 @@ let xReq = XMLHttpRequest();
     xReq. open('get','data.json'); 
     xReq.onload = function (){
         let xData = JSON.parse(xReq.responseText); 
-        alert(xData[0]
+        alert(xData[0]) 
         } 
               xReq.send() 
 
