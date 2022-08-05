@@ -15,6 +15,23 @@ let updata = document.getElementById("updata");
 
 
 
+
+alert("hello") 
+let xReq = XMLHttpRequest(); 
+    
+    xReq. open('get','data.json'); 
+    xReq.onload = function (){
+        let xData = JSON.parse(xReq.responseText); 
+        alert(xData[0]) 
+        } 
+              xReq.send() 
+
+
+
+
+
+
+
 // Get Total
 let totalResult = 0;
 function getTotal(){
