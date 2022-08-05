@@ -44,8 +44,7 @@ if(localStorage.product != null){
 
 submit.onclick = () => {
     
-    let json = JSON.stringify("jdjdjjskwks");
-        fs.writeFile('data.json'," json");
+    
     
     
     
@@ -92,55 +91,22 @@ submit.onclick = () => {
     messages("تم اضافه عنصر جديد");
     
     
-  
+  let xReq = XMLHttpRequest(); 
+    
+    xReq. open('get','data.json'); 
+    xReq.onload = function (){
+        let xData = JSON.parse(xReq.responseText); 
+        alert(xData[0]
+        } 
+              xReq.send() 
     
     
-    const fs = require('fs'); 
 
-let obj = {
-    table: []
-};
-
-fs.exists('data.json', function(exists) {
-
-    if (exists) {
-
-        console.log("yes file exists");
-
-        fs.readFile('data.json', function readFileCallback(err, data) {
-
-            if (err) {
-                console.log(err);
-            } else {
-                obj = JSON.parse(data  );
-
-                for (i = 0; i < 5; i++) {
-                    obj.table.push({
-                        id: i,
-                        square: i * i
-                    });
-                }
-
-                let json = JSON.stringify(obj);
-                fs.writeFile('data.json', json);
-            }
-        });
-    } else {
-
-        console.log("file not exists");
-
-        for (i = 0; i < 5; i++) {
-            obj.table.push({
-                id: i,
-                square: i * i
-            });
-        }
-
-        let json = JSON.stringify("jdjdjjskwks");
-        fs.writeFile('data.json', json);
-    }
-});
-
+    
+        
+            
+                
+                
     
     
     
