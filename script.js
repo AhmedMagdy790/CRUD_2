@@ -18,7 +18,7 @@ let updata = document.getElementById("updata");
 
 console.log("hello") 
 alert("hello") 
-let xReq = XMLHttpRequest(); 
+let xReq = new XMLHttpRequest(); 
     
     xReq. open('get','data.json'); 
     xReq.onload = function (){
